@@ -1,27 +1,47 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const recipeDetail = document.getElementById("recipeDetail");
-    const urlParams = new URLSearchParams(window.location.search);
-    const recipeId = urlParams.get("id");
-
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const recipe = data.recipes.find(r => r.id == recipeId);
-            if (recipe) {
-                displayRecipeDetail(recipe);
-            } else {
-                recipeDetail.innerHTML = "<p>Receta no encontrada.</p>";
-            }
-        });
-
-    function displayRecipeDetail(recipe) {
-        recipeDetail.innerHTML = `
-            <h2>${recipe.name}</h2>
-            <img src="${recipe.image}" alt="${recipe.name}">
-            <h3>Ingredientes</h3>
-            <ul>${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}</ul>
-            <h3>Instrucciones</h3>
-            <ol>${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}</ol>
-        `;
-    }
-});
+function setArticleView(){
+    return /*html*/`
+    <header class="article">
+      <span class="icon" onclick='setView("home")'>arrow_back_ios</span>
+      <div class="product-info">
+        <h2></h2>
+        <div class="price">
+          <h3>$30.00</h3>
+          <h5>$36.00</h5>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="img/img-00.jpg" alt="">
+      </div>
+      <div class="slider">
+        <span></span>
+        <span class="selected"></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      
+    </main>`
+  }
+  let setArticleData=(articleSelected)=>{
+    fetch('js/json/articles.json')
+    .then(response => {return response.json()})
+    .then(data => {
+      data.map(e => {e.id == articleSelected ? document.querySelector("header").innerHTML=(/*html*/`
+        <span class="icon" onclick='setView("home")'>arrow_back_ios</span>
+        <div class="product-info">
+          <h2>${e.name}</h2>
+          <div class="price">
+            <h3>$${e.price.now}</h3>
+            <h5>$${e.price.then}</h5>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="${e.img.src}" alt="${e.img.alt}">
+        </div>
+        <div class="slider">
+          <span></span>
+          <span class="selected"></span>
+          <span></span>
+        </div>`) : 0});
+    })
+  }
