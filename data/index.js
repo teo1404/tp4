@@ -1,15 +1,15 @@
 let setFooter=()=>{
     return /*html*/`
     <footer>
-      <h3>contact us</h3>
+      <h3>hablame</h3>
       <div>
         <div class="row">
           <span class="icon">mail</span>
-          <h5>McMaldo</h5>
+          <h5>el chispon</h5>
         </div>
         <div class="row">
           <span class="icon">mail</span>
-          <h5>maldonado.ignacio.pablo@gmail.com</h5>
+          <h5>sanchezteo@gmail.com</h5>
         </div>
       </div>
     </footer>`
@@ -18,9 +18,9 @@ let setFooter=()=>{
     document.body.innerHTML=/*html*/`
     ${viewName=="article"?setArticleView():setHomeView()}
     ${setFooter()}
-    <script src="js/article.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/index.js"></script>`
+    <script src="data/detalles.js"></script>
+    <script src="data/home.js"></script>
+    <script src="data/index.js"></script>`
     switch(viewName){
       case"article":
         setArticleData(id)
