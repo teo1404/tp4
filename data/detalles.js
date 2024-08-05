@@ -23,7 +23,7 @@ function setArticleView(){
     </main>`
   }
   let setArticleData=(articleSelected)=>{
-    fetch('data/jsons/article.json')
+    fetch('data/jsons/articulos.json')
     .then(response => {return response.json()})
     .then(data => {
       data.map(e => {e.id == articleSelected ? document.querySelector("header").innerHTML=(/*html*/`

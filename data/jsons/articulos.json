@@ -1,9 +1,9 @@
 [
     {
-        "id":"0",
+        "id ":"0",
         "name":"Women Blue Denim",
         "price":{"now":"30.00","then":"36.00"},
-        "img":{"src":"img/img-00.jpg","alt":""},
+        "img":{"src":"css/img/img-00.jpg","alt":""},
         "sizes":["s","m","l","xl","xxl"],
         "color":[],
         "sales":""
@@ -12,7 +12,7 @@
         "id":"1",
         "name":"Hoodie Capo",
         "price":{"now":"35.99","then":"39.99"},
-        "img":{"src":"img/img-01.jpg","alt":""},
+        "img":{"src":"css/img/img-01.jpg","alt":""},
         "sizes":["s","m","l","xl","xxl"],
         "color":[],
         "sales":""

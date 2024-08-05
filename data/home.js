@@ -95,7 +95,7 @@ function setHomeView(){
     </main>`
   }
   function setArticleList(){
-    fetch('data/jsons/article.json')
+    fetch('data/jsons/articulos.json')
     .then(response => {return response.json()})
     .then(data => {
       data.forEach(e=>{
