@@ -6,10 +6,10 @@ let addToCart=async (articleToAdd)=>{
   data.forEach(e => e.id==articleToAdd ? article=e : 0);
   article.color=color;
   article.size=size;
-  localStorage.setItem("cart",
-    localStorage.getItem("cart") ? localStorage.getItem("cart").concat(","+JSON.stringify(article)) : JSON.stringify(article)
+  localStorage.setItem("carta",
+    localStorage.getItem("carta") ? localStorage.getItem("carta").concat(","+JSON.stringify(articulos)) : JSON.stringify(articulos)
   );
-  setView("cart");
+  setView("carta");
 }
 let setSelectedOption=(ubic,idSelected)=>{
   document.querySelectorAll(`${ubic}`).forEach(e => {
@@ -28,12 +28,12 @@ function setArticleView(data,articleSelected){
   <section id="heading">
     <div class="icon-container">
       <span class="icon" onclick='setView("home")'>arrow_back</span>
-      <span class="icon" onclick='setView("cart")'>shopping_cart</span>
+      <span class="icon" onclick='setView("carta")'>shopping_cart</span>
     </div>
     <scroll-container>
       <scroll-page id="page-1">
         <div class="img-container">
-          <img src="${article.img.src}" alt="${article.img.alt}">
+          <img src="${articulos.img.src}" alt="${articulos.img.alt}">
         </div>
       </scroll-page>
     </scroll-container>
@@ -45,10 +45,10 @@ function setArticleView(data,articleSelected){
   </section>
   <section class="product-info">
     <div>
-      <h1>${article.name}</h1>
+      <h1>${articulos.name}</h1>
       <div class="price">
-        <h2>$${article.price.now}</h2>
-        <h4>$${article.price.then}</h4>
+        <h2>$${articulos.price.now}</h2>
+        <h4>$${articulos.price.then}</h4>
       </div>
     </div>
     <div>
@@ -70,7 +70,7 @@ function setArticleView(data,articleSelected){
         <span id="xxl" onClick="setSelectedOption('#size-list span',id)">XXL</span>
       </div>
     </div>
-    <button id="end" onClick="addToCart(${article.id})">Add to cart</button>
+    <button id="end" onClick="addToCart(${articulos.id})">Add to cart</button>
     <!--<h5>Comments</h5>-->
   </section>`
 }

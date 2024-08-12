@@ -66,40 +66,40 @@ let articleCount=(type,id)=>{
   }
   let setTotal=()=>{
     let total=0;
-    document.querySelectorAll("article").forEach(e=>{
-      let a = Number(e.querySelector(".article-price .price").innerHTML)
-      let b = Number(e.querySelector(".article-price .num").innerHTML)
+    document.querySelectorAll("articulos").forEach(e=>{
+      let a = Number(e.querySelector(".articulos-price .price").innerHTML)
+      let b = Number(e.querySelector(".articulos-price .num").innerHTML)
       total+= a * b;
     })
     document.querySelector("#total h3").innerText="$"+total.toFixed(2);
   }
   let checkOut=()=>{
-    localStorage.removeItem("cart");
+    localStorage.removeItem("carta");
     setView("cart");
   }
   let setCartContent=()=>{
     let result="";
-    if(localStorage.getItem("cart")!==null){
-      let data=JSON.parse("["+localStorage.getItem("cart")+"]");
+    if(localStorage.getItem("carta")!==null){
+      let data=JSON.parse("["+localStorage.getItem("carta")+"]");
       data.forEach(e => {
         result+=/*html*/`
-        <article id="a${e.id}">
-          <div class="img-container" onClick='setView("article",${e.id})'>
+        <articolos id="a${e.id}">
+          <div class="img-container" onClick='setView("articulos",${e.id})'>
             <img src="${e.img.src}" alt="">
           </div>
           <div class="article-info">
             <h4>${e.name}</h4>
-            <div class="article-options"><h5>${e.color}</h5><h5 class="size">${e.size}</h5></div>
-            <div class="article-price">
+            <div class="articulos-options"><h5>${e.color}</h5><h5 class="size">${e.size}</h5></div>
+            <div class="articulos-price">
               <h4 class="price">${e.price.now}</h4>
-              <div class="article-unit">
+              <div class="articulos-unit">
                 <button class="icon restar" onclick='articleCount("-","a${e.id}")'>remove</button>
                 <h5 class="num">1</h5>
                 <button class="icon sumar" onclick='articleCount("+","a${e.id}")'>add</button>
               </div>
             </div>
           </div>
-        </article>`
+        </articulos>`
       });
     }
     return result;
@@ -107,14 +107,14 @@ let articleCount=(type,id)=>{
   function setCartView(){
     let total=0;
     if(localStorage.getItem("cart")!==null){
-      JSON.parse("["+localStorage.getItem("cart")+"]").forEach(e=>total+=Number(e.price.now))
+      JSON.parse("["+localStorage.getItem("carta")+"]").forEach(e=>total+=Number(e.price.now))
     }
     return /*html*/`
     <section id="heading">
       <span class="icon" onclick='setView("home")'>arrow_back</span>
       <h2>My Cart</h2>
     </section>
-    <section id="cart" class="${localStorage.getItem("cart")===null ? "empty" : ""}">
+    <section id="carta" class="${localStorage.getItem("carta")===null ? "empty" : ""}">
       ${setCartContent()}
     </section>
     <section id="price">

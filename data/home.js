@@ -1,5 +1,5 @@
 let showAll=()=>{
-  document.querySelector(".article-scroll").classList.toggle(".showAll")
+  document.querySelector(".articulos-scroll").classList.toggle(".showAll")
 }
 let setSelectedImage=(idSelected)=>{
   document.querySelectorAll("nav a").forEach(e => {
@@ -10,7 +10,7 @@ function setHeaderScroll(data){
   let result="";
   data.forEach(e=>{
     if(e.id<3) {
-      result+=/*html*/`<scroll-page id="${e.id}" onClick='setView("article",id)'>
+      result+=/*html*/`<scroll-page id="${e.id}" onClick='setView("articulos",id)'>
         <div class="product-info">
           <h5>Recommendations</h5>
           <h2>${e.name}</h2>
@@ -41,7 +41,7 @@ function setArticleScroll(data){
   data.forEach(e=>{
     if(e.id>2) {
       result+=/*html*/`
-      <article id="${e.id}" onClick='setView("article",id)'>
+      <article id="${e.id}" onClick='setView("articulos",id)'>
         <div class="img-container">
             <img src="${e.img.src}" alt="${e.img.alt}">
         </div>
