@@ -229,7 +229,7 @@ main{
       align-items: center;
       overflow-x: scroll;
       padding: .5rem 1rem;
-      a,article{
+      article{
         width: 9rem;
         height: 10rem;
         display: flex;
