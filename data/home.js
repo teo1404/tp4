@@ -10,7 +10,7 @@ function setHeaderScroll(data){
   let result="";
   data.forEach(e=>{
     if(e.id<3) {
-      result+=/*html*/`<scroll-page id="${e.id}" onClick='setView("articulos",id)'>
+      result+=/*html*/`<scroll-page id="${e.id}" onClick='setView("article",id)'>
         <div class="product-info">
           <h5>Recommendations</h5>
           <h2>${e.name}</h2>

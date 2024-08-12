@@ -7,7 +7,7 @@ let addToCart=async (articleToAdd)=>{
   article.color=color;
   article.size=size;
   localStorage.setItem("carta",
-    localStorage.getItem("carta") ? localStorage.getItem("carta").concat(","+JSON.stringify(articulos)) : JSON.stringify(articulos)
+    localStorage.getItem("carta") ? localStorage.getItem("carta").concat(","+JSON.stringify(article)) : JSON.stringify(article)
   );
   setView("carta");
 }
@@ -33,7 +33,7 @@ function setArticleView(data,articleSelected){
     <scroll-container>
       <scroll-page id="page-1">
         <div class="img-container">
-          <img src="${articulos.img.src}" alt="${articulos.img.alt}">
+          <img src="${article.img.src}" alt="${article.img.alt}">
         </div>
       </scroll-page>
     </scroll-container>
@@ -45,10 +45,10 @@ function setArticleView(data,articleSelected){
   </section>
   <section class="product-info">
     <div>
-      <h1>${articulos.name}</h1>
+      <h1>${article.name}</h1>
       <div class="price">
-        <h2>$${articulos.price.now}</h2>
-        <h4>$${articulos.price.then}</h4>
+        <h2>$${article.price.now}</h2>
+        <h4>$${article.price.then}</h4>
       </div>
     </div>
     <div>
@@ -70,7 +70,7 @@ function setArticleView(data,articleSelected){
         <span id="xxl" onClick="setSelectedOption('#size-list span',id)">XXL</span>
       </div>
     </div>
-    <button id="end" onClick="addToCart(${articulos.id})">Add to cart</button>
+    <button id="end" onClick="addToCart(${article.id})">Add to cart</button>
     <!--<h5>Comments</h5>-->
   </section>`
 }
