@@ -26,15 +26,15 @@ window.route = route;
 handleLocation();*/
 
 async function request() {
-  const response = await fetch("js/json/articles.json");
+  const response = await fetch("data/jsons/articulos.json");
   const data = await response.json();
   return data;
 }
 let setBody=(view,data,id)=>{
   switch(view){
-    case"article":
+    case"articulos":
       return setArticleView(data,id);
-    case"cart":
+    case"carta":
       return setCartView();
     default:
       return setHomeView(data);
