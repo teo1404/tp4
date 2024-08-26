@@ -1,5 +1,5 @@
 @import url(./material-icons.css);
-@import url(./calors.css);
+@import url(./colors.css);
 *{
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ header{
     .logo{
       width: 2.5rem;
       height: 100%;
-      background-image: url(./img/icon-w2.png);
+      background-image: url(../img/icon-w2.png);
       background-position: center;
       background-size: contain;
     }
@@ -229,7 +229,7 @@ main{
       align-items: center;
       overflow-x: scroll;
       padding: .5rem 1rem;
-      article{
+      a,article{
         width: 9rem;
         height: 10rem;
         display: flex;
@@ -534,7 +534,7 @@ main.cart{
     }
   }
   .empty{
-    background-image: url(./img/empty-cart.webp);
+    background-image: url(../img/empty-cart.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;

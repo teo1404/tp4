@@ -6,10 +6,10 @@ let addToCart=async (articleToAdd)=>{
   data.forEach(e => e.id==articleToAdd ? article=e : 0);
   article.color=color;
   article.size=size;
-  localStorage.setItem("carta",
-    localStorage.getItem("carta") ? localStorage.getItem("carta").concat(","+JSON.stringify(article)) : JSON.stringify(article)
+  localStorage.setItem("cart",
+    localStorage.getItem("cart") ? localStorage.getItem("cart").concat(","+JSON.stringify(article)) : JSON.stringify(article)
   );
-  setView("carta");
+  setView("cart");
 }
 let setSelectedOption=(ubic,idSelected)=>{
   document.querySelectorAll(`${ubic}`).forEach(e => {
@@ -28,7 +28,7 @@ function setArticleView(data,articleSelected){
   <section id="heading">
     <div class="icon-container">
       <span class="icon" onclick='setView("home")'>arrow_back</span>
-      <span class="icon" onclick='setView("carta")'>shopping_cart</span>
+      <span class="icon" onclick='setView("cart")'>shopping_cart</span>
     </div>
     <scroll-container>
       <scroll-page id="page-1">
