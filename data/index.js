@@ -26,7 +26,7 @@ window.route = route;
 handleLocation();*/
 
 async function request() {
-  const response = await fetch("js/json/articles.json");
+  const response = await fetch("data/jsons/articulos.json");
   const data = await response.json();
   return data;
 }
