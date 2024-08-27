@@ -1,5 +1,5 @@
 let showAll=()=>{
-  document.querySelector(".articulos-scroll").classList.toggle(".showAll")
+  document.querySelector(".article-scroll").classList.toggle(".showAll")
 }
 let setSelectedImage=(idSelected)=>{
   document.querySelectorAll("nav a").forEach(e => {
@@ -41,7 +41,7 @@ function setArticleScroll(data){
   data.forEach(e=>{
     if(e.id>2) {
       result+=/*html*/`
-      <article id="${e.id}" onClick='setView("articulos",id)'>
+      <article id="${e.id}" onClick='setView("article",id)'>
         <div class="img-container">
             <img src="${e.img.src}" alt="${e.img.alt}">
         </div>
