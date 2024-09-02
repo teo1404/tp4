@@ -1,5 +1,32 @@
 @import url(./material-icons.css);
 @import url(./calors.css);
+
+
+
+header {
+  background: linear-gradient(#ff0000 85%, #ff0000f5); /* Header en tonos rojos */
+  color: var(--font-soft);
+}
+
+main {
+  color: var(--font-text);
+}
+
+.scroll-container nav a {
+  background-color: #ff0000; 
+}
+
+.scroll-container nav a.selected {
+  background-color: #000000; /
+}
+
+
+
+
+
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -8,7 +35,8 @@
   text-decoration: none;
   border: none;
 }
-body{
+
+body {
   width: 100%;
   height: 100vh;
   background-color: var(--bg-general);
@@ -19,7 +47,7 @@ header{
   padding:0 .5rem;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(#25262b 85%, #25262bf5);
+  background: linear-gradient(red 85%, white);
   color: var(--font-soft);
   div{
     gap:2px;
@@ -78,7 +106,7 @@ main{
       display: flex;
       align-items: center;
       border-radius: 0.35rem;
-      background-color: rgba(206, 206, 206, 0.2);
+      background-color: rgba(250, 6, 6, 0.2);
       input{
         height: 100%;
         background-color: transparent;
@@ -563,7 +591,7 @@ main.cart{
 }
 footer{
   padding: 0 1.5rem 1rem 1.5rem;
-  background: linear-gradient(#25262bea, #25262b 10%);
+  background: linear-gradient(white,red  10%);
   color: var(--bg-general);
   h3{
     padding: 1rem 0 .5rem 0;
