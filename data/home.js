@@ -73,8 +73,8 @@ function setHomeView(data){
     </section>
     <section id="Trending" class="article-list">
       <div class="title">
-        <h4>Trending</h4>
-        <h6 onClick='showAll()'>Show all</h6>
+        <h4></h4>
+        <h6 onClick='showAll()'>Siguente pestaña</h6>
       </div>
       <div class="article-scroll">
         ${setArticleScroll(data)}
@@ -82,22 +82,22 @@ function setHomeView(data){
     </section>
     <section class="Categories">
       <div class="title">
-        <h4>Categories</h4>
-        <h6>Show all</h6>
+        <h4>Categorias</h4>
+        <h6>Siguente pestaña</h6>
       </div>
       <div class="categories-list">
         <article>
-          <!--<div class="icon">woman</div>-->
+          <!--<div class="icon">Ropa Hombres</div>-->
           <div class="img-container">
-            <img src="img/icon-m.png" alt="">
+            <img src="../css/img/icon-m.png" alt="">
           </div>
           <div class="name">Woman<h6>(728 items)</h6></div>
           <div class="icon">chevron_right</div>
         </article>
         <article>
-          <!--<div class="icon">man</div>-->
+          <!--<div class="icon">Ropa Mujeres</div>-->
           <div class="img-container">
-            <img src="img/icon-w.png" alt="">
+            <img src="../css/img/icon-w.png" alt="">
           </div>
           <div class="name">Man<h6>(536 items)</h6></div>
           <div class="icon">chevron_right</div>
@@ -106,8 +106,8 @@ function setHomeView(data){
     </section>
     <section class="article-list">
       <div class="title">
-        <h4>Best Seller</h4>
-        <h6>Show all</h6>
+        <h4>Nuestras redes Socialesr</h4>
+        <h6>Siguente pestaña</h6>
       </div>
       <div class="article-scroll"></div>
     </section>`

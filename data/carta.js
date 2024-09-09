@@ -51,7 +51,7 @@ function setCartView(){
   return /*html*/`
   <section id="heading">
     <span class="icon" onclick='setView("home")'>arrow_back</span>
-    <h2>My Cart</h2>
+    <h2>tu compra</h2>
   </section>
   <section id="cart" class="${localStorage.getItem("cart")===null ? "empty" : ""}">
     ${setCartContent()}
