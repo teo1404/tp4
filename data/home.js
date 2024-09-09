@@ -12,7 +12,7 @@ function setHeaderScroll(data){
     if(e.id<3) {
       result+=/*html*/`<scroll-page id="${e.id}" onClick='setView("article",id)'>
         <div class="product-info">
-          <h5>Recommendations</h5>
+          <h5>Recomendaciones</h5>
           <h2>${e.name}</h2>
           <div class="price">
             <h3>$${e.price.now}</h4>
@@ -62,7 +62,7 @@ function setHomeView(data){
     <section id="heading">
       <div class="search">
         <input class="icon" type="submit" value="search">
-        <input type="search" placeholder="What are you looking for?">
+        <input type="search" placeholder="que producto buscabas?">
       </div>
       <scroll-container>
         ${setHeaderScroll(data)}

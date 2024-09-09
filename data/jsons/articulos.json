@@ -8,6 +8,7 @@
         "color": ["red", "white"],
         "sales": ""
     },
+
     {
         "id": "1",
         "name": "River Plate Away Jersey 2024",
@@ -15,72 +16,9 @@
         "img": {"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7AGY4bS_2lPM-Eo-nX_YQb0C4SPXcxjq8nw&s", "alt": "River Plate Away Jersey 2024"},
         "sizes": ["s", "m", "l", "xl", "xxl"],
         "color": ["black", "red"],
-        "sales": ""
-    },
-    {
-        "id": "2",
-        "name": "River Plate Training Pants",
-        "price": {"now": "39.99", "then": "49.99"},
-        "img": {"src": "https://www.google.com/url?sa=i&url=https%3A%2F%2Friverlugano.com.ar%2Fproductos%2Fbuzo-verde-2023-talles-especiales%2F&psig=AOvVaw3ryNiPv__2OOUwXV2J6jTA&ust=1725375961860000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMC6nrvEpIgDFQAAAAAdAAAAABAp", "alt": "River Plate Training Pants"},
-        "sizes": ["s", "m", "l", "xl", "xxl"],
-        "color": ["black", "white"],
-        "sales": ""
-    },
-    {
-        "id": "3",
-        "name": "Remera negra Retro",
-        "price": {"now": "79.99", "then": "89.99"},
-        "img": {"src": "https://acdn.mitiendanube.com/stores/001/150/754/products/1111-66e63ce8a655e96c7316880798969848-480-0.jpg", "alt": "River Plate Windbreaker Jacket"},
-        "sizes": ["s", "m", "l", "xl", "xxl"],
-        "color": ["white", "red"],
-        "sales": ""
-    },
-    {
-        "id": "4",
-        "name": "Buzo Retro Negro",
-        "price": {"now": "14.99", "then": "19.99"},
-        "img": {"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lGOAGEdDjdM3KtFCoX5tFz53oyfWkSh4Pw&s", "alt": "River Plate Socks"},
-        "sizes": ["s", "m", "l", "xl"],
-        "color": ["white", "red"],
-        "sales": ""
-    },
-    {
-        "id": "5",
-        "name": "conjunto de bebe",
-        "price": {"now": "24.99", "then": "29.99"},
-        "img": {"src": "https://i0.wp.com/www.argensend.com/wp-content/uploads/2021/04/D_NQ_NP_656373-MLA72795504645_112023-O.webp?fit=500%2C361&ssl=1", "alt": "River Plate Cap"},
-        "sizes": ["one size"],
-        "color": ["black", "red"],
-        "sales": ""
-    },
-    {
-        "id": "6",
-        "name": "Buzo Retro",
-        "price": {"now": "19.99", "then": "24.99"},
-        "img": {"src": "https://acdn.mitiendanube.com/stores/001/245/906/products/f3f4a3d2-9fdd-4fd8-a09c-891b0892ddad1-aa682155c50a65da0b16855380556303-480-0.jpeg", "alt": "Buzo Retro"},
-        "sizes": ["one size"],
-        "color": ["white", "red"],
         "sales": ""
     },
 
-    {
-        "id": "0",
-        "name": "La Mejor ropa de river aca",
-        "price": {"now": "59.99", "then": "69.99"},
-        "img": {"src": "https://acdn.mitiendanube.com/stores/195/035/themes/common/logo-1071722022-1651535838-afd31cafd17a785f510d8d9bba9ffc801651535838.png?0", "alt": "River Plate Home Jersey 2024"},
-        "sizes": ["s", "m", "l", "xl", "xxl"],
-        "color": ["red", "white"],
-        "sales": ""
-    },
-    {
-        "id": "1",
-        "name": "River Plate Away Jersey 2024",
-        "price": {"now": "59.99", "then": "69.99"},
-        "img": {"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7AGY4bS_2lPM-Eo-nX_YQb0C4SPXcxjq8nw&s", "alt": "River Plate Away Jersey 2024"},
-        "sizes": ["s", "m", "l", "xl", "xxl"],
-        "color": ["black", "red"],
-        "sales": ""
-    },
     {
         "id": "2",
         "name": "River Plate Training Pants",

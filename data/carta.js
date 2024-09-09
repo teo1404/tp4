@@ -58,6 +58,6 @@ function setCartView(){
   </section>
   <section id="price">
     <div id="total"><h5>Total</h5><h3>$${total.toFixed(2)}</h3></div>
-    <button id="end" onclick="checkOut()">Check out</button>
+    <button id="end" onclick="checkOut()">cerra compra</button>
   </section>`
 }
