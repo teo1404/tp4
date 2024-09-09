@@ -106,7 +106,7 @@ function setHomeView(data){
     </section>
     <section class="article-list">
       <div class="title">
-        <h4>Nuestras redes Socialesr</h4>
+        <h4>Nuestras redes Sociales</h4>
         <h6>Siguente pestaña</h6>
       </div>
       <div class="article-scroll"></div>
